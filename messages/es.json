@@ -1,0 +1,203 @@
+{
+  "common": {
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "continue": "Continuar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error. Por favor, intenta de nuevo.",
+    "notFound": "No encontrado"
+  },
+  "locale": {
+    "switch": "Switch to English",
+    "current": "ES"
+  },
+  "engines": {
+    "growth": {
+      "name": "Motor de Crecimiento",
+      "tagline": "Vende más aprovechando tus datos",
+      "short": "Crecimiento"
+    },
+    "efficiency": {
+      "name": "Motor de Eficiencia",
+      "tagline": "Mejora tus márgenes reduciendo el costo de ventas",
+      "short": "Eficiencia"
+    },
+    "adaptability": {
+      "name": "Motor de Adaptabilidad",
+      "tagline": "Reduce la fricción en la ejecución",
+      "short": "Adaptabilidad"
+    }
+  },
+  "pillars": {
+    "g1": "Infraestructura de Datos de Clientes",
+    "g2": "Segmentación y Personalización",
+    "g3": "Marketing de Ciclo de Vida y Retención",
+    "g4": "Optimización de Canales Pagados y Propios",
+    "g5": "Analítica de Ingresos y Pronóstico",
+    "e1": "Planificación de Inventario y Demanda",
+    "e2": "Gestión de Proveedores y Compras",
+    "e3": "Eficiencia de Fulfillment y Logística",
+    "e4": "Márgenes de Producto y Disciplina de Surtido",
+    "e5": "Datos Operacionales y Visibilidad de Costos",
+    "a1": "Stack Tecnológico e Integración",
+    "a2": "Documentación y Estandarización de Procesos",
+    "a3": "Alineación Organizacional y Velocidad de Decisión",
+    "a4": "Cultura de Datos y Adopción de Herramientas",
+    "a5": "Gestión del Cambio y Mejora Continua"
+  },
+  "tiers": {
+    "Foundational": {
+      "label": "Fundacional",
+      "description": "Las capacidades están ausentes o son completamente informales. Existen brechas significativas en los fundamentos."
+    },
+    "Developing": {
+      "label": "En Desarrollo",
+      "description": "Algunos procesos están definidos pero se aplican de forma inconsistente. Hay oportunidades de mejora rápida."
+    },
+    "Scaling": {
+      "label": "Escalando",
+      "description": "Las capacidades son repetibles y se miden. El enfoque se orienta a la optimización y la automatización."
+    },
+    "Leading": {
+      "label": "Líder",
+      "description": "Ejecución de primer nivel. Diferenciación competitiva a través de datos y excelencia operacional."
+    }
+  },
+  "likert": {
+    "1": "No iniciado",
+    "2": "Informal / Ad hoc",
+    "3": "Definido",
+    "4": "Gestionado",
+    "5": "Optimizado"
+  },
+  "assessment": {
+    "welcome": {
+      "title": "Evaluación de Capacidades",
+      "subtitle": "Esta evaluación mide la madurez de tu organización en tres motores de desarrollo: Crecimiento, Eficiencia y Adaptabilidad.",
+      "duration": "Duración estimada: 30–40 minutos",
+      "instructions": "Para cada afirmación, selecciona el nivel que mejor describe la situación actual de tu organización. No hay respuestas correctas o incorrectas.",
+      "startButton": "Comenzar evaluación",
+      "company": "Empresa"
+    },
+    "progress": {
+      "engine": "Motor {current} de {total}",
+      "pillar": "Pilar {current} de {total}",
+      "question": "Pregunta {current} de {total}"
+    },
+    "navigation": {
+      "nextPillar": "Siguiente pilar",
+      "prevPillar": "Pilar anterior",
+      "nextEngine": "Siguiente motor",
+      "finishEngine": "Guardar y continuar",
+      "submit": "Finalizar evaluación"
+    },
+    "complete": {
+      "title": "¡Evaluación completada!",
+      "message": "Gracias por completar la evaluación. Tu equipo de consultoría revisará los resultados y se pondrá en contacto contigo.",
+      "viewResults": "Ver mis resultados"
+    }
+  },
+  "results": {
+    "title": "Resultados de tu Evaluación",
+    "overallScore": "Puntuación General",
+    "engineScores": "Resultados por Motor",
+    "recommendations": "Recomendaciones Prioritarias",
+    "criticalGap": "Brecha Crítica",
+    "opportunity": "Oportunidad de Desarrollo",
+    "strength": "Fortaleza",
+    "flags": {
+      "adaptabilityFirst": "La fricción organizacional limitará los avances en Crecimiento y Eficiencia. Se recomienda abordar la Adaptabilidad primero.",
+      "growthOverEfficiency": "El crecimiento está superando la madurez operacional. Existe riesgo de presión sobre los márgenes a medida que escales.",
+      "efficiencyOverGrowth": "Base operacional sólida. Prioriza la inversión en capacidades de Crecimiento para capitalizar tu eficiencia."
+    }
+  },
+  "admin": {
+    "title": "Panel de Administración — Mosaico",
+    "sessions": {
+      "title": "Sesiones de Evaluación",
+      "new": "Nueva sesión",
+      "empty": "No hay sesiones aún. Crea la primera para comenzar.",
+      "columns": {
+        "company": "Empresa",
+        "contact": "Contacto",
+        "status": "Estado",
+        "created": "Creada",
+        "score": "Puntuación",
+        "actions": "Acciones"
+      },
+      "status": {
+        "pending": "Pendiente",
+        "in_progress": "En progreso",
+        "completed": "Completada"
+      }
+    },
+    "newSession": {
+      "title": "Nueva Sesión de Evaluación",
+      "companyName": "Nombre de la empresa",
+      "companySize": "Tamaño de la empresa",
+      "companySizes": {
+        "1-10": "1–10 empleados",
+        "11-50": "11–50 empleados",
+        "51-200": "51–200 empleados",
+        "201-500": "201–500 empleados",
+        "500+": "Más de 500 empleados"
+      },
+      "industryVertical": "Vertical / Industria",
+      "industries": {
+        "fashion": "Moda y Apparel",
+        "food": "Alimentos y Bebidas",
+        "home": "Hogar y Decoración",
+        "beauty": "Belleza y Cuidado Personal",
+        "sports": "Deportes y Outdoor",
+        "electronics": "Electrónica",
+        "health": "Salud y Bienestar",
+        "other": "Otro"
+      },
+      "revenueBand": "Rango de ingresos anuales",
+      "revenueBands": {
+        "<1M": "Menos de USD 1M",
+        "1M-10M": "USD 1M – 10M",
+        "10M-50M": "USD 10M – 50M",
+        "50M-200M": "USD 50M – 200M",
+        "200M+": "Más de USD 200M"
+      },
+      "primaryChannel": "Canal principal",
+      "channels": {
+        "dtc": "E-commerce directo (D2C)",
+        "marketplace": "Marketplace (Amazon, MercadoLibre, etc.)",
+        "omnichannel": "Omnicanal (digital + físico)",
+        "wholesale": "Mayorista / B2B",
+        "other": "Otro"
+      },
+      "contactName": "Nombre del contacto",
+      "contactEmail": "Email del contacto",
+      "createButton": "Crear sesión",
+      "linkCopied": "¡Enlace copiado!",
+      "copyLink": "Copiar enlace",
+      "shareLink": "Enlace de evaluación"
+    },
+    "sessionDetail": {
+      "backToList": "Volver a sesiones",
+      "rawScores": "Puntuaciones detalladas",
+      "notes": "Notas internas",
+      "notesPlaceholder": "Agrega notas internas para el equipo de consultoría...",
+      "saveNotes": "Guardar notas",
+      "notesSaved": "Notas guardadas",
+      "engineNotes": {
+        "growth": "Notas — Motor de Crecimiento",
+        "efficiency": "Notas — Motor de Eficiencia",
+        "adaptability": "Notas — Motor de Adaptabilidad",
+        "overall": "Notas generales"
+      }
+    },
+    "login": {
+      "title": "Acceso al Panel",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "loginButton": "Ingresar",
+      "error": "Credenciales incorrectas. Por favor, verifica tu correo y contraseña."
+    }
+  }
+}

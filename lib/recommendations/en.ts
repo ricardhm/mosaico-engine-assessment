@@ -1,0 +1,111 @@
+import type { RecommendationMap } from './types'
+
+const recommendations: RecommendationMap = {
+  g1: {
+    pillarId: 'g1',
+    Foundational: 'Establish a unified customer data foundation: define a customer identity strategy, select a data collection framework, and assign clear ownership of customer data governance. This is the prerequisite for all growth capabilities.',
+    Developing: 'Consolidate customer records into a single profile and implement consent management. Prioritize enabling self-serve data access for marketing and commerce teams to reduce bottlenecks.',
+    Scaling: 'Mature your data quality practices and expand real-time data capture across all channels. Explore a Customer Data Platform (CDP) to automate profile enrichment and segmentation updates.',
+    Leading: 'Your customer data foundation is a competitive asset. Focus on deepening real-time personalization signals and exploring predictive enrichment to stay ahead of the market.',
+  },
+  g2: {
+    pillarId: 'g2',
+    Foundational: 'Start with basic segmentation: define 3–5 core customer segments (e.g., new buyers, loyal customers, lapsed), and implement simple triggered personalization for each. Even basic relevance improvements drive meaningful revenue gains.',
+    Developing: 'Move from static to behavioral segments and enable automated personalization on your key revenue pages (homepage, category, cart). Implement A/B testing infrastructure to measure impact.',
+    Scaling: 'Expand personalization to the full customer journey and introduce machine learning-based product recommendations. Shift from broad segments to micro-segments and real-time decisioning.',
+    Leading: 'Your personalization capability is sophisticated. Focus on cross-channel orchestration and testing increasingly granular hypotheses to extract incremental revenue from a mature foundation.',
+  },
+  g3: {
+    pillarId: 'g3',
+    Foundational: 'Define your customer lifecycle stages and build the first automated flows: welcome series, first-purchase follow-up, and a basic lapsed-customer reactivation. These three flows alone typically recover significant revenue.',
+    Developing: 'Implement LTV tracking by cohort and channel, and build a churn risk scoring model using recency, frequency, and monetary (RFM) signals. Use scores to trigger proactive retention offers.',
+    Scaling: 'Deploy predictive churn models and personalize retention offers based on customer value. Measure and optimize the ROI of each lifecycle program with statistical rigor.',
+    Leading: 'Your lifecycle marketing is best-in-class. Explore next-best-action engines and AI-driven offer personalization to further reduce churn and extend LTV at scale.',
+  },
+  g4: {
+    pillarId: 'g4',
+    Foundational: 'Connect your first-party customer data to paid media platforms to enable audience targeting and exclusion. Establish a basic attribution framework — even a simple first/last-click model is better than none.',
+    Developing: 'Implement a multi-touch attribution model and use it to guide budget allocation decisions. Build structured content and posting cadences for owned channels with clear conversion KPIs.',
+    Scaling: 'Use customer segment data for advanced lookalike modeling in paid media and run systematic creative testing. Automate email and SMS optimization based on engagement and revenue signals.',
+    Leading: 'Your channel optimization is data-driven and sophisticated. Invest in incrementality testing to separate true channel contribution from correlation and optimize spend at the margin.',
+  },
+  g5: {
+    pillarId: 'g5',
+    Foundational: 'Build a basic revenue reporting layer that delivers daily or weekly revenue by channel and product category without manual work. This single capability unblocks most growth decisions.',
+    Developing: 'Introduce formal revenue forecasting and track leading indicators (conversion rate, average order value, repeat purchase rate) alongside top-line sales. Use the forecast operationally in planning cycles.',
+    Scaling: 'Deploy a structured experimentation program with a testing roadmap and statistical significance thresholds. Automate cohort analysis to identify high-LTV acquisition sources.',
+    Leading: 'Your analytics and forecasting are a strategic advantage. Focus on shortening the cycle from insight to test to decision, and on embedding analytics more deeply into commercial planning.',
+  },
+  e1: {
+    pillarId: 'e1',
+    Foundational: 'Establish baseline demand planning: move from purely reactive buying to a structured review of recent sales trends, seasonality, and planned promotions before placing orders. Implement simple reorder point logic for your top-volume SKUs.',
+    Developing: 'Build a systematic forecasting process for your top 80% of revenue SKUs, incorporating lead times and safety stock formulas. Connect the forecast to your purchase order workflow.',
+    Scaling: 'Implement statistical demand forecasting with automatic adjustment for promotions and seasonality. Measure forecast accuracy (MAPE or bias) and use it to continuously improve the model.',
+    Leading: 'Your demand planning is sophisticated. Explore AI-driven replenishment optimization and dynamic safety stock models that adjust to real-time demand signals and supplier lead time variability.',
+  },
+  e2: {
+    pillarId: 'e2',
+    Foundational: 'Establish supplier performance scorecards for your top suppliers, tracking at minimum on-time delivery and fill rate. Start benchmarking your cost prices annually against market alternatives.',
+    Developing: 'Formalize contract review cycles and diversify supply sources for your highest-risk SKUs. Integrate purchase orders, receiving, and invoicing into a single workflow to reduce reconciliation overhead.',
+    Scaling: 'Implement real-time supplier performance monitoring and tie scorecards to contract renegotiation triggers. Use spend analytics to identify consolidation opportunities that improve your negotiating position.',
+    Leading: 'Your procurement is strategically managed. Explore vendor-managed inventory (VMI) programs with key suppliers and collaborative forecasting to further reduce lead times and carrying costs.',
+  },
+  e3: {
+    pillarId: 'e3',
+    Foundational: 'Calculate your fully loaded cost-to-fulfill per order — picking, packing, shipping, and last-mile — as a baseline. Even a rough estimate by channel reveals significant optimization opportunities.',
+    Developing: 'Optimize carrier mix and negotiate rate agreements based on your actual shipping volume by lane and zone. Build a returns tracking process that captures root cause and SKU-level return rates.',
+    Scaling: 'Implement dynamic carrier selection and packaging optimization tools. Use return rate data by SKU to trigger product quality reviews and reduce preventable returns at the source.',
+    Leading: 'Your fulfillment operations are efficient and data-driven. Focus on network optimization — inventory positioning closer to demand — and explore automation in high-volume fulfillment processes.',
+  },
+  e4: {
+    pillarId: 'e4',
+    Foundational: 'Build margin visibility at the SKU level, even if it requires manual calculation initially. Once you can see margin by product, you can make better pricing, assortment, and promotional decisions.',
+    Developing: 'Implement a formal assortment review process that removes low-margin, low-velocity SKUs on a quarterly basis. Require margin modeling before approving promotional discounts.',
+    Scaling: 'Automate margin reporting and integrate it into your merchandising planning tool. Build a promotional calendar with pre- and post-analysis so you can optimize trade investment.',
+    Leading: 'Your margin management is rigorous and systematic. Focus on dynamic pricing capabilities and real-time margin optimization by channel to extract additional profitability from your existing assortment.',
+  },
+  e5: {
+    pillarId: 'e5',
+    Foundational: 'Establish a shared definition of margin and gross profit that all commercial teams agree on. Build a single operational dashboard that finance, merchandising, and operations all reference for KPIs.',
+    Developing: 'Implement cost allocation for indirect costs and produce weekly management accounts with actionable margin data. Close the gap between financial reporting and operational decision-making cycles.',
+    Scaling: 'Automate cost allocation and variance analysis. Embed operational KPI dashboards into weekly leadership reviews and hold teams accountable to cost-efficiency targets.',
+    Leading: 'Your cost visibility is excellent. Focus on predictive cost modeling and scenario planning to proactively manage margin under demand or input cost variability.',
+  },
+  a1: {
+    pillarId: 'a1',
+    Foundational: 'Prioritize integration of your core systems — e-commerce, OMS, and ERP — to eliminate manual reconciliation. Even basic event-driven integration between these three systems dramatically reduces operational friction.',
+    Developing: 'Document your architecture: system ownership, data flows, and API contracts. This reduces key-person dependency and accelerates future technology decisions. Begin addressing the highest-friction legacy integrations.',
+    Scaling: 'Adopt a composable architecture mindset: prefer best-of-breed integrations over monolithic platforms. Build internal capability to evaluate and onboard new vendors faster.',
+    Leading: 'Your technology stack is well-integrated. Focus on real-time data streaming across systems and building a platform that allows marketing and operations to self-serve new capabilities without engineering involvement.',
+  },
+  a2: {
+    pillarId: 'a2',
+    Foundational: 'Document your three most critical operational processes (e.g., order processing, new product launch, returns handling) to a level where a new hire can execute them. This alone reduces your operational fragility significantly.',
+    Developing: 'Establish a process ownership model and a quarterly review cadence. Introduce a lightweight continuous improvement mechanism — even a shared log where teams capture process failures and improvements.',
+    Scaling: 'Implement process compliance measurement for critical workflows and use data to drive process improvement decisions. Connect process performance to operational KPIs.',
+    Leading: 'Your process management is mature. Focus on process automation for repetitive, high-volume workflows and on building a continuous improvement culture that operates without management intervention.',
+  },
+  a3: {
+    pillarId: 'a3',
+    Foundational: 'Define clear decision rights for your most frequent cross-functional decisions. A simple RACI for merchandising, marketing campaign approval, and tech investment decisions will immediately reduce execution delays.',
+    Developing: 'Align teams on shared OKRs that span commercial, marketing, and operations. Measure and report on time-to-market for new initiatives to create accountability for decision speed.',
+    Scaling: 'Streamline approval processes to push decisions closer to the team level. Implement a test-and-learn framework that allows teams to move fast on low-risk commercial experiments without senior sign-off.',
+    Leading: 'Your decision-making is fast and aligned. Focus on building organizational structures that enable autonomous squads to test and scale new capabilities independently.',
+  },
+  a4: {
+    pillarId: 'a4',
+    Foundational: 'Equip your commercial teams with basic self-serve dashboards for their most critical decisions — inventory levels, sales by channel, and campaign performance. Remove the dependency on the data team for routine reporting.',
+    Developing: 'Invest in data literacy training for commercial and operations teams. Implement data quality monitoring so that decision-makers trust the data they see.',
+    Scaling: 'Expand self-serve analytics to include forecasting and what-if scenario tools. Establish a data governance council that maintains shared definitions and data quality standards.',
+    Leading: 'Your data culture is strong. Focus on embedding AI-assisted insights into daily workflows and on enabling teams to act on predictive signals, not just historical reporting.',
+  },
+  a5: {
+    pillarId: 'a5',
+    Foundational: 'Introduce a basic change management checklist for your next major initiative: identify stakeholders, plan communications, and measure adoption at 30/60/90 days. This single habit significantly improves implementation success rates.',
+    Developing: 'Institutionalize retrospectives as a standard project close-out activity. Create a visible mechanism for employees to raise process improvement ideas and ensure ideas get a timely response.',
+    Scaling: 'Build a formal change management capability and embed it in your project delivery methodology. Measure adoption rates for major technology and process changes and use data to improve your change approach.',
+    Leading: 'Your change management capability is a competitive differentiator. Focus on building organizational ambidexterity — the ability to run current operations excellently while simultaneously designing what comes next.',
+  },
+}
+
+export default recommendations

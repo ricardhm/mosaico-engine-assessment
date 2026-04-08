@@ -1,0 +1,111 @@
+import type { RecommendationMap } from './types'
+
+const recommendations: RecommendationMap = {
+  g1: {
+    pillarId: 'g1',
+    Foundational: 'Establece una base de datos de clientes unificada: define una estrategia de identidad de cliente, selecciona un framework de captura de datos y asigna responsabilidad clara sobre la gobernanza. Esta es la base sobre la que se construyen todas las demás capacidades de crecimiento.',
+    Developing: 'Consolida los registros de clientes en un perfil único e implementa la gestión de consentimientos. Prioriza habilitar el acceso autónomo a datos para los equipos de marketing y comercio para reducir cuellos de botella operativos.',
+    Scaling: 'Madura tus prácticas de calidad de datos y amplía la captura en tiempo real en todos los canales. Evalúa una Customer Data Platform (CDP) para automatizar el enriquecimiento de perfiles y la actualización de segmentos.',
+    Leading: 'Tu infraestructura de datos de clientes es un activo competitivo. Enfócate en profundizar las señales de personalización en tiempo real y en explorar el enriquecimiento predictivo para mantenerte por delante del mercado.',
+  },
+  g2: {
+    pillarId: 'g2',
+    Foundational: 'Comienza con segmentación básica: define 3–5 segmentos clave (ej. compradores nuevos, clientes leales, inactivos) e implementa personalización simple activada para cada uno. Incluso mejoras de relevancia básicas generan ganancias de ingreso significativas.',
+    Developing: 'Migra de segmentos estáticos a segmentos conductuales y habilita personalización automatizada en tus páginas de mayor conversión (home, categoría, carrito). Implementa infraestructura de A/B testing para medir el impacto.',
+    Scaling: 'Expande la personalización a todo el customer journey e introduce recomendaciones de producto basadas en machine learning. Avanza de segmentos amplios a micro-segmentos y toma de decisiones en tiempo real.',
+    Leading: 'Tu capacidad de personalización es sofisticada. Enfócate en la orquestación cross-channel y en probar hipótesis cada vez más granulares para extraer ingresos incrementales de una base madura.',
+  },
+  g3: {
+    pillarId: 'g3',
+    Foundational: 'Define las etapas del ciclo de vida de tus clientes y construye los primeros flujos automatizados: serie de bienvenida, seguimiento post-primera compra y reactivación básica de clientes inactivos. Estos tres flujos por sí solos suelen recuperar ingresos significativos.',
+    Developing: 'Implementa el seguimiento de LTV por cohorte y canal, y construye un modelo básico de riesgo de churn usando señales de recencia, frecuencia y valor monetario (RFM). Usa los puntajes para activar ofertas de retención proactivas.',
+    Scaling: 'Despliega modelos predictivos de churn y personaliza las ofertas de retención según el valor del cliente. Mide y optimiza el ROI de cada programa de ciclo de vida con rigor estadístico.',
+    Leading: 'Tu marketing de ciclo de vida es de primer nivel. Explora motores de "next-best-action" y personalización de ofertas impulsada por IA para reducir aún más el churn y extender el LTV a escala.',
+  },
+  g4: {
+    pillarId: 'g4',
+    Foundational: 'Conecta tus datos propios de clientes a las plataformas de medios pagados para habilitar la segmentación de audiencias y la exclusión de clientes actuales. Establece un framework básico de atribución — incluso un modelo simple de primer o último clic es mejor que ninguno.',
+    Developing: 'Implementa un modelo de atribución multi-touch y úsalo para guiar las decisiones de inversión por canal. Construye calendarios editoriales estructurados para canales propios con KPIs de conversión claros.',
+    Scaling: 'Usa datos de segmentos de clientes para modelado de audiencias similares en medios pagados y realiza pruebas sistemáticas de creatividades. Automatiza la optimización de email y SMS en función de señales de engagement e ingresos.',
+    Leading: 'Tu optimización de canales es sofisticada y basada en datos. Invierte en pruebas de incrementalidad para separar la contribución real de cada canal de la correlación, y optimiza el gasto en el margen.',
+  },
+  g5: {
+    pillarId: 'g5',
+    Foundational: 'Construye una capa de reporte de ingresos básica que entregue resultados diarios o semanales por canal y categoría de producto sin trabajo manual. Esta única capacidad desbloquea la mayoría de las decisiones de crecimiento.',
+    Developing: 'Introduce pronósticos formales de ingresos y haz seguimiento de indicadores adelantados (tasa de conversión, ticket promedio, tasa de recompra) además de las ventas históricas. Usa el pronóstico operativamente en los ciclos de planificación.',
+    Scaling: 'Despliega un programa de experimentación estructurado con un roadmap de pruebas y umbrales de significancia estadística. Automatiza el análisis de cohortes para identificar fuentes de adquisición con alto LTV.',
+    Leading: 'Tu analítica y pronóstico son una ventaja estratégica. Enfócate en acortar el ciclo desde el insight hasta la prueba y la decisión, y en integrar más profundamente la analítica en la planificación comercial.',
+  },
+  e1: {
+    pillarId: 'e1',
+    Foundational: 'Establece una planificación de demanda básica: migra de compras puramente reactivas a una revisión estructurada de tendencias de ventas recientes, estacionalidad y promociones planificadas antes de emitir órdenes. Implementa lógica simple de punto de reorden para tus SKUs de mayor volumen.',
+    Developing: 'Construye un proceso sistemático de pronóstico para el 80% superior de tus SKUs por ingresos, incorporando tiempos de entrega y fórmulas de stock de seguridad. Conecta el pronóstico a tu flujo de órdenes de compra.',
+    Scaling: 'Implementa pronóstico estadístico de demanda con ajuste automático para promociones y estacionalidad. Mide la precisión del pronóstico (MAPE o sesgo) y úsala para mejorar continuamente el modelo.',
+    Leading: 'Tu planificación de demanda es sofisticada. Explora la optimización de reposición con IA y modelos dinámicos de stock de seguridad que se ajusten a señales de demanda en tiempo real y variabilidad en tiempos de entrega.',
+  },
+  e2: {
+    pillarId: 'e2',
+    Foundational: 'Establece scorecards de desempeño para tus principales proveedores, midiendo como mínimo puntualidad de entrega y tasa de cumplimiento. Empieza a hacer benchmarking anual de tus precios de costo frente a alternativas del mercado.',
+    Developing: 'Formaliza ciclos de revisión de contratos y diversifica fuentes de abastecimiento para tus SKUs de mayor riesgo. Integra órdenes de compra, recepción y facturación en un único flujo de trabajo para reducir el trabajo de conciliación.',
+    Scaling: 'Implementa monitoreo en tiempo real del desempeño de proveedores y vincula los scorecards a disparadores de renegociación de contratos. Usa análisis de gasto para identificar oportunidades de consolidación que mejoren tu posición negociadora.',
+    Leading: 'Tu gestión de compras es estratégica. Explora programas de inventario gestionado por el proveedor (VMI) y pronóstico colaborativo con proveedores clave para reducir aún más los tiempos de entrega y los costos de inventario.',
+  },
+  e3: {
+    pillarId: 'e3',
+    Foundational: 'Calcula tu costo total de fulfillment por pedido — picking, packing, envío y última milla — como punto de partida. Incluso una estimación aproximada por canal revela oportunidades de optimización significativas.',
+    Developing: 'Optimiza el mix de transportistas y negocia tarifas basadas en tu volumen real de envíos por ruta y zona. Construye un proceso de seguimiento de devoluciones que capture la causa raíz y las tasas de devolución por SKU.',
+    Scaling: 'Implementa herramientas de selección dinámica de transportistas y optimización de embalaje. Usa los datos de tasas de devolución por SKU para activar revisiones de calidad de producto y reducir las devoluciones prevenibles en la fuente.',
+    Leading: 'Tus operaciones de fulfillment son eficientes y basadas en datos. Enfócate en la optimización de la red — posicionando inventario más cerca de la demanda — y explora la automatización en los procesos de fulfillment de alto volumen.',
+  },
+  e4: {
+    pillarId: 'e4',
+    Foundational: 'Construye visibilidad de margen a nivel de SKU, aunque inicialmente requiera cálculo manual. Una vez que puedas ver el margen por producto, podrás tomar mejores decisiones de precio, surtido y promociones.',
+    Developing: 'Implementa un proceso formal de revisión de surtido que elimine SKUs de bajo margen y baja rotación de forma trimestral. Exige modelos de margen antes de aprobar descuentos promocionales.',
+    Scaling: 'Automatiza el reporte de margen e intégralo en tu herramienta de planificación de merchandising. Construye un calendario de promociones con análisis pre y post para optimizar la inversión comercial.',
+    Leading: 'Tu gestión de márgenes es rigurosa y sistemática. Enfócate en capacidades de precio dinámico y optimización de margen en tiempo real por canal para extraer rentabilidad adicional de tu surtido actual.',
+  },
+  e5: {
+    pillarId: 'e5',
+    Foundational: 'Establece una definición compartida de margen y utilidad bruta en la que todos los equipos comerciales estén alineados. Construye un dashboard operacional único que finanzas, comercial y operaciones consulten para los KPIs.',
+    Developing: 'Implementa la asignación de costos indirectos y produce reportes de gestión semanales con datos de margen accionables. Cierra la brecha entre el ciclo de reporte financiero y el ciclo de toma de decisiones operacionales.',
+    Scaling: 'Automatiza la asignación de costos y el análisis de varianzas. Integra los dashboards de KPIs operacionales en las revisiones semanales de liderazgo y responsabiliza a los equipos por los objetivos de eficiencia de costos.',
+    Leading: 'Tu visibilidad de costos es excelente. Enfócate en el modelado predictivo de costos y la planificación de escenarios para gestionar proactivamente el margen ante variabilidad de demanda o costos de insumos.',
+  },
+  a1: {
+    pillarId: 'a1',
+    Foundational: 'Prioriza la integración de tus sistemas principales — e-commerce, OMS y ERP — para eliminar la conciliación manual. Incluso una integración básica dirigida por eventos entre estos tres sistemas reduce drásticamente la fricción operacional.',
+    Developing: 'Documenta tu arquitectura: ownership de sistemas, flujos de datos y contratos de API. Esto reduce la dependencia de personas clave y acelera futuras decisiones tecnológicas. Comienza a abordar las integraciones legadas de mayor fricción.',
+    Scaling: 'Adopta una mentalidad de arquitectura componible: prefiere integraciones best-of-breed sobre plataformas monolíticas. Construye capacidad interna para evaluar e incorporar nuevos proveedores con mayor rapidez.',
+    Leading: 'Tu stack tecnológico está bien integrado. Enfócate en el streaming de datos en tiempo real entre sistemas y en construir una plataforma que permita a marketing y operaciones autoabastecerse de nuevas capacidades sin involucrar a ingeniería.',
+  },
+  a2: {
+    pillarId: 'a2',
+    Foundational: 'Documenta tus tres procesos operacionales más críticos (ej. procesamiento de pedidos, lanzamiento de nuevos productos, gestión de devoluciones) a un nivel en que un nuevo empleado pueda ejecutarlos. Esto solo reduce significativamente tu fragilidad operacional.',
+    Developing: 'Establece un modelo de ownership de procesos y una cadencia de revisión trimestral. Introduce un mecanismo liviano de mejora continua — incluso un log compartido donde los equipos registren fallas y mejoras de procesos.',
+    Scaling: 'Implementa medición del apego a procesos para los flujos críticos y usa datos para impulsar decisiones de mejora. Conecta el desempeño de procesos con los KPIs operacionales.',
+    Leading: 'Tu gestión de procesos es madura. Enfócate en la automatización de flujos repetitivos de alto volumen y en construir una cultura de mejora continua que opere sin intervención de la gerencia.',
+  },
+  a3: {
+    pillarId: 'a3',
+    Foundational: 'Define derechos de decisión claros para tus decisiones transversales más frecuentes. Un RACI simple para merchandising, aprobación de campañas de marketing e inversión tecnológica reducirá inmediatamente los retrasos en la ejecución.',
+    Developing: 'Alinea a los equipos en OKRs compartidos que abarquen las áreas comercial, marketing y operaciones. Mide y reporta el tiempo hasta el mercado para nuevas iniciativas para generar responsabilidad sobre la velocidad de decisión.',
+    Scaling: 'Simplifica los procesos de aprobación para llevar las decisiones al nivel del equipo. Implementa un framework de prueba y aprendizaje que permita a los equipos moverse rápido en experimentos comerciales de bajo riesgo sin requerir aprobación senior.',
+    Leading: 'Tu toma de decisiones es rápida y alineada. Enfócate en construir estructuras organizacionales que permitan a equipos autónomos probar y escalar nuevas capacidades de forma independiente.',
+  },
+  a4: {
+    pillarId: 'a4',
+    Foundational: 'Equipa a tus equipos comerciales con dashboards básicos de autoservicio para sus decisiones más críticas — niveles de inventario, ventas por canal y desempeño de campañas. Elimina la dependencia del equipo de datos para el reporte de rutina.',
+    Developing: 'Invierte en capacitación de alfabetización de datos para equipos comerciales y de operaciones. Implementa monitoreo de calidad de datos para que los tomadores de decisiones confíen en los datos que ven.',
+    Scaling: 'Amplía la analítica de autoservicio para incluir herramientas de pronóstico y escenarios hipotéticos. Establece un consejo de gobernanza de datos que mantenga definiciones compartidas y estándares de calidad.',
+    Leading: 'Tu cultura de datos es sólida. Enfócate en integrar insights asistidos por IA en los flujos de trabajo diarios y en habilitar a los equipos para actuar sobre señales predictivas, no solo reportes históricos.',
+  },
+  a5: {
+    pillarId: 'a5',
+    Foundational: 'Introduce una lista de verificación básica de gestión del cambio para tu próxima iniciativa importante: identifica stakeholders, planifica comunicaciones y mide la adopción a los 30/60/90 días. Este solo hábito mejora significativamente las tasas de éxito en implementación.',
+    Developing: 'Institucionaliza las retrospectivas como una actividad estándar de cierre de proyecto. Crea un mecanismo visible para que los empleados propongan mejoras de procesos y asegúrate de que las ideas reciban una respuesta oportuna.',
+    Scaling: 'Construye una capacidad formal de gestión del cambio e intégrala en tu metodología de entrega de proyectos. Mide las tasas de adopción de los cambios tecnológicos y de procesos más importantes, y usa los datos para mejorar tu enfoque.',
+    Leading: 'Tu capacidad de gestión del cambio es un diferenciador competitivo. Enfócate en construir la ambidestreza organizacional — la capacidad de operar las operaciones actuales con excelencia mientras simultáneamente diseñas lo que viene.',
+  },
+}
+
+export default recommendations

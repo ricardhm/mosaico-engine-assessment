@@ -1,0 +1,203 @@
+{
+  "common": {
+    "next": "Next",
+    "previous": "Previous",
+    "continue": "Continue",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "notFound": "Not found"
+  },
+  "locale": {
+    "switch": "Cambiar a Español",
+    "current": "EN"
+  },
+  "engines": {
+    "growth": {
+      "name": "Growth Engine",
+      "tagline": "Sell more by leveraging your data",
+      "short": "Growth"
+    },
+    "efficiency": {
+      "name": "Efficiency Engine",
+      "tagline": "Better margins by reducing COGS",
+      "short": "Efficiency"
+    },
+    "adaptability": {
+      "name": "Adaptability Engine",
+      "tagline": "Reduce friction in execution",
+      "short": "Adaptability"
+    }
+  },
+  "pillars": {
+    "g1": "Customer Data Infrastructure",
+    "g2": "Segmentation & Personalization",
+    "g3": "Lifecycle & Retention Marketing",
+    "g4": "Paid & Owned Channel Optimization",
+    "g5": "Revenue Analytics & Forecasting",
+    "e1": "Inventory & Demand Planning",
+    "e2": "Supplier & Procurement Management",
+    "e3": "Fulfillment & Logistics Efficiency",
+    "e4": "Product Margin & Assortment Discipline",
+    "e5": "Operational Data & Cost Visibility",
+    "a1": "Technology Stack & Integration",
+    "a2": "Process Documentation & Standardization",
+    "a3": "Organizational Alignment & Decision Velocity",
+    "a4": "Data Literacy & Tooling Adoption",
+    "a5": "Change Management & Continuous Improvement"
+  },
+  "tiers": {
+    "Foundational": {
+      "label": "Foundational",
+      "description": "Capabilities are absent or entirely ad hoc. Significant gaps exist across fundamentals."
+    },
+    "Developing": {
+      "label": "Developing",
+      "description": "Some processes are defined but inconsistently applied. Quick wins available."
+    },
+    "Scaling": {
+      "label": "Scaling",
+      "description": "Capabilities are repeatable and measured. Focus shifts to optimization and automation."
+    },
+    "Leading": {
+      "label": "Leading",
+      "description": "Best-in-class execution. Competitive differentiation through data and operational excellence."
+    }
+  },
+  "likert": {
+    "1": "Not started",
+    "2": "Informal / Ad hoc",
+    "3": "Defined",
+    "4": "Managed",
+    "5": "Optimized"
+  },
+  "assessment": {
+    "welcome": {
+      "title": "Capability Assessment",
+      "subtitle": "This assessment measures your organization's maturity across three development engines: Growth, Efficiency, and Adaptability.",
+      "duration": "Estimated duration: 30–40 minutes",
+      "instructions": "For each statement, select the level that best describes your organization's current situation. There are no right or wrong answers.",
+      "startButton": "Start assessment",
+      "company": "Company"
+    },
+    "progress": {
+      "engine": "Engine {current} of {total}",
+      "pillar": "Pillar {current} of {total}",
+      "question": "Question {current} of {total}"
+    },
+    "navigation": {
+      "nextPillar": "Next pillar",
+      "prevPillar": "Previous pillar",
+      "nextEngine": "Next engine",
+      "finishEngine": "Save and continue",
+      "submit": "Submit assessment"
+    },
+    "complete": {
+      "title": "Assessment complete!",
+      "message": "Thank you for completing the assessment. Your consulting team will review the results and be in touch.",
+      "viewResults": "View my results"
+    }
+  },
+  "results": {
+    "title": "Your Assessment Results",
+    "overallScore": "Overall Score",
+    "engineScores": "Results by Engine",
+    "recommendations": "Priority Recommendations",
+    "criticalGap": "Critical Gap",
+    "opportunity": "Development Opportunity",
+    "strength": "Strength",
+    "flags": {
+      "adaptabilityFirst": "Organizational friction will limit gains in Growth and Efficiency. We recommend addressing Adaptability first.",
+      "growthOverEfficiency": "Growth is outpacing operational maturity. There is margin risk as you scale.",
+      "efficiencyOverGrowth": "Strong operational foundation. Prioritize investment in Growth capabilities to capitalize on your efficiency."
+    }
+  },
+  "admin": {
+    "title": "Admin Panel — Mosaico",
+    "sessions": {
+      "title": "Assessment Sessions",
+      "new": "New session",
+      "empty": "No sessions yet. Create the first one to get started.",
+      "columns": {
+        "company": "Company",
+        "contact": "Contact",
+        "status": "Status",
+        "created": "Created",
+        "score": "Score",
+        "actions": "Actions"
+      },
+      "status": {
+        "pending": "Pending",
+        "in_progress": "In progress",
+        "completed": "Completed"
+      }
+    },
+    "newSession": {
+      "title": "New Assessment Session",
+      "companyName": "Company name",
+      "companySize": "Company size",
+      "companySizes": {
+        "1-10": "1–10 employees",
+        "11-50": "11–50 employees",
+        "51-200": "51–200 employees",
+        "201-500": "201–500 employees",
+        "500+": "500+ employees"
+      },
+      "industryVertical": "Industry / Vertical",
+      "industries": {
+        "fashion": "Fashion & Apparel",
+        "food": "Food & Beverage",
+        "home": "Home & Décor",
+        "beauty": "Beauty & Personal Care",
+        "sports": "Sports & Outdoor",
+        "electronics": "Electronics",
+        "health": "Health & Wellness",
+        "other": "Other"
+      },
+      "revenueBand": "Annual revenue range",
+      "revenueBands": {
+        "<1M": "Under USD 1M",
+        "1M-10M": "USD 1M – 10M",
+        "10M-50M": "USD 10M – 50M",
+        "50M-200M": "USD 50M – 200M",
+        "200M+": "Over USD 200M"
+      },
+      "primaryChannel": "Primary channel",
+      "channels": {
+        "dtc": "Direct-to-consumer (D2C) e-commerce",
+        "marketplace": "Marketplace (Amazon, MercadoLibre, etc.)",
+        "omnichannel": "Omnichannel (digital + physical)",
+        "wholesale": "Wholesale / B2B",
+        "other": "Other"
+      },
+      "contactName": "Contact name",
+      "contactEmail": "Contact email",
+      "createButton": "Create session",
+      "linkCopied": "Link copied!",
+      "copyLink": "Copy link",
+      "shareLink": "Assessment link"
+    },
+    "sessionDetail": {
+      "backToList": "Back to sessions",
+      "rawScores": "Detailed scores",
+      "notes": "Internal notes",
+      "notesPlaceholder": "Add internal notes for the consulting team...",
+      "saveNotes": "Save notes",
+      "notesSaved": "Notes saved",
+      "engineNotes": {
+        "growth": "Notes — Growth Engine",
+        "efficiency": "Notes — Efficiency Engine",
+        "adaptability": "Notes — Adaptability Engine",
+        "overall": "Overall notes"
+      }
+    },
+    "login": {
+      "title": "Admin Access",
+      "email": "Email address",
+      "password": "Password",
+      "loginButton": "Sign in",
+      "error": "Invalid credentials. Please check your email and password."
+    }
+  }
+}
