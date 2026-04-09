@@ -21,7 +21,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [session, setSession] = useState<Session | null>(null)
   const [loading, setLoading] = useState(true)
-  const supabase = createBrowserClient()
+  // Stable ref — must not be recreated on every render or useEffect loops infinitely
+  const [supabase] = useState(() => createBrowserClient())
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
@@ -36,11 +37,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     })
 
     return () => subscription.unsubscribe()
-  }, [supabase.auth])
+  }, [supabase])
 
   const signOut = useCallback(async () => {
     await supabase.auth.signOut()
-  }, [supabase.auth])
+  }, [supabase])
 
   return (
     <AuthContext.Provider value={{ user, session, loading, signOut }}>
