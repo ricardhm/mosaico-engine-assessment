@@ -52,8 +52,16 @@ export default async function ResultsPage({
   const recommendations = getRecommendations(locale, scores.pillar_scores, scores.tiers)
   const flags = getCrossEngineFlags(scores.engine_scores)
 
-  // Only show critical gaps and development opportunities to client (not strengths)
-  const clientRecs = recommendations.filter((r) => r.priority !== 'strength').slice(0, 8)
+  const gaps = recommendations.filter((r) => r.priority !== 'strength').slice(0, 8)
+  // Always surface top 3 strengths so the report never feels like only bad news
+  const strengths = recommendations.filter((r) => r.priority === 'strength').slice(0, 3)
+
+  const TIER_COLORS: Record<string, string> = {
+    Foundational: 'bg-red-100 text-red-700',
+    Developing:   'bg-amber-100 text-amber-700',
+    Scaling:      'bg-blue-100 text-blue-700',
+    Leading:      'bg-green-100 text-green-700',
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -90,7 +98,7 @@ export default async function ResultsPage({
         </div>
 
         {/* Engine scores */}
-        <div className="grid grid-cols-3 gap-3 mb-6">
+        <div className="grid grid-cols-3 gap-3 mb-4">
           {ENGINES.map((engine) => {
             const score = scores.engine_scores[engine]
             const tier = scores.tiers[engine]
@@ -101,11 +109,28 @@ export default async function ResultsPage({
                 </div>
                 <div className="text-2xl font-bold text-slate-900">{score.toFixed(1)}</div>
                 <div className="mt-1.5">
-                  <Badge variant="tier">{tTiers(`${tier}.label`)}</Badge>
+                  <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${TIER_COLORS[tier]}`}>
+                    {tTiers(`${tier}.label`)}
+                  </span>
                 </div>
               </div>
             )
           })}
+        </div>
+
+        {/* Maturity tier legend */}
+        <div className="bg-white rounded-2xl border border-slate-200 p-5 mb-6">
+          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">{t('tierLegend')}</p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {(['Foundational', 'Developing', 'Scaling', 'Leading'] as const).map((tier) => (
+              <div key={tier}>
+                <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${TIER_COLORS[tier]}`}>
+                  {tTiers(`${tier}.label`)}
+                </span>
+                <p className="text-xs text-slate-400 mt-1.5 leading-tight">{tTiers(`${tier}.description`)}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Cross-engine flags */}
@@ -120,9 +145,10 @@ export default async function ResultsPage({
         )}
 
         {/* Recommendations */}
-        <h2 className="text-base font-semibold text-slate-800 mb-3">{t('recommendations')}</h2>
-        <div className="flex flex-col gap-3">
-          {clientRecs.map((rec) => (
+        <h2 className="text-base font-semibold text-slate-800 mb-1">{t('recommendations')}</h2>
+        <p className="text-xs text-slate-400 mb-3">{t('recommendationsNote')}</p>
+        <div className="flex flex-col gap-3 mb-8">
+          {gaps.map((rec) => (
             <div key={rec.pillarId} className="bg-white rounded-xl border border-slate-200 p-4">
               <div className="flex items-center gap-2 mb-2">
                 <Badge variant={rec.priority}>
@@ -136,6 +162,27 @@ export default async function ResultsPage({
             </div>
           ))}
         </div>
+
+        {/* Strengths — always show even if everything scores low */}
+        {strengths.length > 0 && (
+          <>
+            <h2 className="text-base font-semibold text-slate-800 mb-1">{t('strengthsTitle')}</h2>
+            <p className="text-xs text-slate-400 mb-3">{t('strengthsNote')}</p>
+            <div className="flex flex-col gap-3">
+              {strengths.map((rec) => (
+                <div key={rec.pillarId} className="bg-white rounded-xl border border-slate-200 p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Badge variant="strength">{t('strength')}</Badge>
+                    <span className="text-sm font-medium text-slate-700">
+                      {tPillars(rec.pillarId as Parameters<typeof tPillars>[0])}
+                    </span>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">{rec.text}</p>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
 
         <p className="text-xs text-slate-400 text-center mt-10">
           Mosaico · {new Date().getFullYear()}

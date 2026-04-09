@@ -10,11 +10,11 @@ const questions: Question[] = [
   { id: 'g_1_3', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 3,
     text: '¿Qué tan maduros son tus prácticas de gobernanza de datos de clientes — gestión de consentimientos, estándares de calidad de datos y políticas de retención?' },
   { id: 'g_1_4', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 4,
-    text: '¿En qué medida los equipos de marketing y comercio pueden acceder de forma autónoma a los datos de clientes para segmentación y análisis, sin depender del equipo de tecnología?' },
+    text: '¿En qué medida los equipos de marketing y comercio pueden acceder de forma autónoma a los datos de clientes para segmentación y análisis, sin depender del equipo de tecnología — desde ningún acceso autónomo hoy, hasta completamente integrado en su flujo de trabajo diario?' },
 
   // G2 — Segmentación y Personalización
   { id: 'g_2_1', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 1,
-    text: '¿Qué tan granulares y dinámicos son tus segmentos de clientes — se actualizan en tiempo real según el comportamiento, o se refrescan manualmente de forma periódica?' },
+    text: '¿Qué tan madura es tu práctica de segmentación de clientes — desde no tener segmentos definidos, hasta micro-segmentos completamente dinámicos que se actualizan en tiempo real según el comportamiento?' },
   { id: 'g_2_2', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 2,
     text: '¿En qué grado tu sitio web, app o tienda ofrece contenido personalizado, recomendaciones de producto o precios diferenciados para distintos segmentos de clientes?' },
   { id: 'g_2_3', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 3,
@@ -97,20 +97,20 @@ const questions: Question[] = [
   { id: 'e_5_1', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 1,
     text: '¿Qué tan bien escala tu capacidad operacional con la demanda — puedes manejar incrementos de volumen significativos (picos estacionales, fases de crecimiento) sin aumentos proporcionales en personal o costo?' },
   { id: 'e_5_2', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 2,
-    text: '¿En qué medida están estandarizados tus procesos operacionales clave y pueden ser ejecutados por un nuevo integrante sin depender del conocimiento tribal concentrado en pocas personas clave?' },
+    text: '¿En qué medida están estandarizados tus procesos operacionales clave y pueden ser ejecutados por un nuevo integrante sin depender del conocimiento concentrado en pocas personas clave?' },
   { id: 'e_5_3', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 3,
     text: '¿Qué tan resiliente es tu operación ante disrupciones — tienes procesos de respaldo documentados, sistemas redundantes y rutas de escalamiento claras cuando los flujos críticos fallan?' },
   { id: 'e_5_4', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 4,
-    text: '¿Con qué deliberación planifica tu organización la capacidad operacional — tienes un roadmap prospectivo para escalar infraestructura, sistemas y personas por delante de la demanda?' },
+    text: '¿Con qué anticipación planifica tu organización la capacidad operativa — tienes un plan para escalar infraestructura, sistemas y personas antes de que la demanda lo exija?' },
 
   // ── MOTOR DE ADAPTABILIDAD ───────────────────────────────────────────
   // A1 — Stack Tecnológico e Integración
   { id: 'a_1_1', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 1,
-    text: '¿Qué tan integrados están tus sistemas de comercio principales (plataforma de e-commerce, OMS, ERP, WMS, CRM) — ¿comparten datos en tiempo casi real o se reconcilian manualmente?' },
+    text: '¿Qué tan integrados están tus sistemas de comercio principales — plataforma de e-commerce, OMS (sistema de gestión de pedidos), ERP (sistema de planificación empresarial), WMS (sistema de gestión de almacén) y CRM (sistema de gestión de clientes) — ¿comparten datos en tiempo casi real o se reconcilian manualmente?' },
   { id: 'a_1_2', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 2,
-    text: '¿Cuánta deuda técnica o dependencia de sistemas legados frena tu capacidad de lanzar nuevas funcionalidades o modificar las existentes?' },
+    text: '¿Cuánto te limitan tus sistemas actuales para lanzar nuevas funcionalidades o hacer cambios? ¿Cada modificación requiere un esfuerzo técnico, tiempo o costo significativo?' },
   { id: 'a_1_3', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 3,
-    text: '¿Tienes documentados el ownership de sistemas, los contratos de API y los mapas de integración, o la arquitectura solo la entienden unas pocas personas clave?' },
+    text: '¿Está documentada la arquitectura de tus sistemas de forma que alguien fuera del equipo técnico pueda entender cómo están conectados los sistemas principales y cómo fluyen los datos entre ellos?' },
   { id: 'a_1_4', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 4,
     text: '¿Qué tan capaz es tu equipo de evaluar, incorporar y reemplazar proveedores tecnológicos en un plazo razonable (por ejemplo, una nueva plataforma en menos de 12 meses)?' },
 
@@ -152,7 +152,7 @@ const questions: Question[] = [
   { id: 'a_5_3', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 3,
     text: '¿Qué tan seguros se sienten los empleados para plantear problemas operacionales o proponer cambios — y con qué rapidez se evalúan las buenas ideas y se decide probarlas o descartarlas?' },
   { id: 'a_5_4', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 4,
-    text: '¿Qué tan bien equilibra tu organización la ejecución confiable de las operaciones actuales con la prueba y adopción simultánea de nuevas capacidades?' },
+    text: '¿Qué tan bien logra tu organización adoptar nuevas formas de trabajar e innovar sin descuidar la ejecución operativa del día a día?' },
 ]
 
 export default questions

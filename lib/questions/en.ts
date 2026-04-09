@@ -10,11 +10,11 @@ const questions: Question[] = [
   { id: 'g_1_3', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 3,
     text: 'How mature are your data governance practices around customer data — consent management, data quality standards, and retention policies?' },
   { id: 'g_1_4', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 4,
-    text: 'To what extent can your marketing and commerce teams self-serve customer data for segmentation and analysis without engineering support?' },
+    text: 'To what extent can your marketing and commerce teams access customer data for segmentation and analysis without engineering support — from no self-serve access at all, to fully autonomous and embedded in their daily workflow?' },
 
   // G2 — Segmentation & Personalization
   { id: 'g_2_1', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 1,
-    text: 'How granular and dynamic are your customer segments — do they update in real time based on behavior, or are they manually refreshed periodically?' },
+    text: 'How mature is your customer segmentation practice — from no defined segments at all, to fully dynamic micro-segments that update automatically based on real-time behavior?' },
   { id: 'g_2_2', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 2,
     text: 'To what degree does your website, app, or storefront serve personalized content, product recommendations, or pricing to different customer segments?' },
   { id: 'g_2_3', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 3,
@@ -97,7 +97,7 @@ const questions: Question[] = [
   { id: 'e_5_1', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 1,
     text: 'How well does your operational capacity scale with demand — can you handle significant volume increases (seasonal spikes, growth phases) without proportional increases in headcount or cost?' },
   { id: 'e_5_2', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 2,
-    text: 'To what extent are your core operational processes standardized and executable by a new team member without relying on tribal knowledge concentrated in a few key individuals?' },
+    text: 'To what extent are your core operational processes standardized and executable by a new team member without depending on knowledge held by only a few people?' },
   { id: 'e_5_3', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 3,
     text: 'How resilient is your operation to disruptions — do you have documented backup processes, redundant systems, and clear escalation paths when critical workflows fail?' },
   { id: 'e_5_4', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 4,
@@ -106,11 +106,11 @@ const questions: Question[] = [
   // ── ADAPTABILITY ENGINE ──────────────────────────────────────────────
   // A1 — Technology Stack & Integration
   { id: 'a_1_1', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 1,
-    text: 'How well integrated are your core commerce systems (e-commerce platform, OMS, ERP, WMS, CRM) — do they share data in near real time or are they manually reconciled?' },
+    text: 'How well integrated are your core commerce systems — e-commerce platform, OMS (Order Management System), ERP (Enterprise Resource Planning), WMS (Warehouse Management System), and CRM (Customer Relationship Management) — do they share data in near real time or are they manually reconciled?' },
   { id: 'a_1_2', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 2,
-    text: 'How much technical debt or legacy system dependency slows your ability to launch new capabilities or change existing ones?' },
+    text: 'How much do your current systems limit your ability to launch new features or make changes? Does every modification require significant technical effort, time, or cost?' },
   { id: 'a_1_3', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 3,
-    text: 'Do you have documented system ownership, API contracts, and integration maps, or is your architecture understood only by a small number of individuals?' },
+    text: 'Is your systems architecture documented clearly enough that someone outside the technical team could understand how your core systems are connected and how data flows between them?' },
   { id: 'a_1_4', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 4,
     text: 'How capable is your team of evaluating, onboarding, and replacing technology vendors within a reasonable timeframe (e.g., a new platform in under 12 months)?' },
 
