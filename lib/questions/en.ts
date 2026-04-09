@@ -8,9 +8,9 @@ const questions: Question[] = [
   { id: 'g_1_2', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 2,
     text: 'Do you have a unified customer record that consolidates behavior, transactions, and demographics into one profile?' },
   { id: 'g_1_3', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 3,
-    text: 'How mature are your data governance practices around customer data — consent management, data quality standards, and retention policies?' },
+    text: 'How mature are your data governance policies around customer data — consent management, regulatory compliance, data retention rules, and access controls?' },
   { id: 'g_1_4', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 4,
-    text: 'To what extent can your marketing and commerce teams access customer data for segmentation and analysis without engineering support — from no self-serve access at all, to fully autonomous and embedded in their daily workflow?' },
+    text: 'To what extent can your marketing and commerce teams access customer data — profiles, purchase history, and behavioral signals — for segmentation and campaign execution without engineering support, from no self-serve access at all to fully autonomous?' },
 
   // G2 — Segmentation & Personalization
   { id: 'g_2_1', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 1,
@@ -59,7 +59,7 @@ const questions: Question[] = [
   { id: 'e_1_2', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 2,
     text: 'Do you have documented data ownership — is it clear who is responsible for the accuracy and governance of each critical data domain in your business?' },
   { id: 'e_1_3', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 3,
-    text: 'To what extent can your commercial and operational teams access and query business data self-serve, without relying on IT or a data engineering team to pull reports?' },
+    text: 'To what extent can your commercial and operational teams access business metrics and reports — sales performance, inventory, margins, and fulfillment KPIs — self-serve, without relying on IT or a data engineering team?' },
   { id: 'e_1_4', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 4,
     text: 'How mature is your data architecture — do you have a structured, scalable data infrastructure (data warehouse, data lake, or equivalent) that can support your growing analytical needs?' },
 
@@ -142,7 +142,7 @@ const questions: Question[] = [
   { id: 'a_4_3', pillarId: 'a4', engine: 'adaptability', pillarIndex: 4, questionIndex: 3,
     text: 'How consistently are new tools and platforms adopted across teams — do you have a structured change management process for technology rollouts?' },
   { id: 'a_4_4', pillarId: 'a4', engine: 'adaptability', pillarIndex: 4, questionIndex: 4,
-    text: 'How well does your organization identify and act on data quality issues before they cause downstream errors in reporting or operations?' },
+    text: 'How well do your teams recognize and flag data quality issues in the tools and dashboards they use daily — rather than relying solely on a central data team to catch errors?' },
 
   // A5 — Change Management & Continuous Improvement
   { id: 'a_5_1', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 1,

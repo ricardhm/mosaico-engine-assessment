@@ -78,6 +78,14 @@
       "subtitle": "This assessment measures your organization's maturity across three development engines: Growth, Efficiency, and Adaptability.",
       "duration": "Estimated duration: 30–40 minutes",
       "instructions": "For each statement, select the level that best describes your organization's current situation. There are no right or wrong answers.",
+      "anonymityNote": "Your individual responses are confidential.",
+      "seniority": "Your role in the organization",
+      "seniorityPlaceholder": "Select your role",
+      "seniorityOptions": {
+        "leadership": "Leadership (C-suite / VP / Director)",
+        "senior_management": "Senior Management",
+        "middle_management": "Middle Management"
+      },
       "startButton": "Start assessment",
       "company": "Company"
     },

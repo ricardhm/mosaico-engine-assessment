@@ -46,10 +46,14 @@ create table if not exists public.sessions (
   primary_channel     text,
   contact_name        text,
   contact_email       text,
+  respondent_seniority text,
   consultant_id       uuid references auth.users(id) on delete set null,
   created_at          timestamptz not null default now(),
   completed_at        timestamptz
 );
+
+-- Run this on existing databases to add the seniority column:
+-- alter table public.sessions add column if not exists respondent_seniority text;
 
 create index if not exists sessions_token_idx on public.sessions (token);
 create index if not exists sessions_consultant_idx on public.sessions (consultant_id);

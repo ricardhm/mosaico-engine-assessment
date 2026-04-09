@@ -78,6 +78,14 @@
       "subtitle": "Esta evaluación mide la madurez de tu organización en tres motores de desarrollo: Crecimiento, Eficiencia y Adaptabilidad.",
       "duration": "Duración estimada: 30–40 minutos",
       "instructions": "Para cada afirmación, selecciona el nivel que mejor describe la situación actual de tu organización. No hay respuestas correctas o incorrectas.",
+      "anonymityNote": "Tus respuestas individuales son confidenciales.",
+      "seniority": "Tu rol en la organización",
+      "seniorityPlaceholder": "Selecciona tu rol",
+      "seniorityOptions": {
+        "leadership": "Dirección (C-suite / VP / Director)",
+        "senior_management": "Gerencia Senior",
+        "middle_management": "Gerencia Media"
+      },
       "startButton": "Comenzar evaluación",
       "company": "Empresa"
     },

@@ -8,9 +8,9 @@ const questions: Question[] = [
   { id: 'g_1_2', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 2,
     text: '¿Cuentas con un registro unificado de cliente que consolide comportamiento, transacciones y datos demográficos en un solo perfil?' },
   { id: 'g_1_3', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 3,
-    text: '¿Qué tan maduros son tus prácticas de gobernanza de datos de clientes — gestión de consentimientos, estándares de calidad de datos y políticas de retención?' },
+    text: '¿Qué tan maduras son tus políticas de gobernanza de datos de clientes — gestión de consentimientos, cumplimiento regulatorio, políticas de retención de datos y controles de acceso?' },
   { id: 'g_1_4', pillarId: 'g1', engine: 'growth', pillarIndex: 1, questionIndex: 4,
-    text: '¿En qué medida los equipos de marketing y comercio pueden acceder de forma autónoma a los datos de clientes para segmentación y análisis, sin depender del equipo de tecnología — desde ningún acceso autónomo hoy, hasta completamente integrado en su flujo de trabajo diario?' },
+    text: '¿En qué medida los equipos de marketing y comercio pueden acceder de forma autónoma a los datos de clientes — perfiles, historial de compras y comportamiento — para segmentación y ejecución de campañas, sin depender del equipo de tecnología, desde ningún acceso autónomo hasta completamente integrado en su flujo diario?' },
 
   // G2 — Segmentación y Personalización
   { id: 'g_2_1', pillarId: 'g2', engine: 'growth', pillarIndex: 2, questionIndex: 1,
@@ -59,7 +59,7 @@ const questions: Question[] = [
   { id: 'e_1_2', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 2,
     text: '¿Tienes documentados los responsables de datos — está claro quién es accountable de la exactitud y gobernanza de cada dominio de datos crítico en tu negocio?' },
   { id: 'e_1_3', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 3,
-    text: '¿En qué medida pueden tus equipos comerciales y operacionales acceder y consultar datos del negocio de forma autónoma, sin depender de TI o de un equipo de ingeniería de datos para extraer reportes?' },
+    text: '¿En qué medida pueden tus equipos comerciales y operacionales acceder a métricas y reportes del negocio — ventas, inventario, márgenes y KPIs operacionales — de forma autónoma, sin depender de TI o de un equipo de ingeniería de datos para extraer reportes?' },
   { id: 'e_1_4', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 4,
     text: '¿Qué tan madura es tu arquitectura de datos — cuentas con una infraestructura estructurada y escalable (data warehouse, data lake o equivalente) que soporte el crecimiento de tus necesidades analíticas?' },
 
@@ -142,7 +142,7 @@ const questions: Question[] = [
   { id: 'a_4_3', pillarId: 'a4', engine: 'adaptability', pillarIndex: 4, questionIndex: 3,
     text: '¿Con qué consistencia se adoptan nuevas herramientas y plataformas en los equipos — tienes un proceso estructurado de gestión del cambio para los lanzamientos tecnológicos?' },
   { id: 'a_4_4', pillarId: 'a4', engine: 'adaptability', pillarIndex: 4, questionIndex: 4,
-    text: '¿Qué tan bien identifica y actúa tu organización ante problemas de calidad de datos antes de que generen errores en reportes u operaciones?' },
+    text: '¿Qué tan bien identifican y señalan tus equipos los problemas de calidad en los datos y herramientas que usan diariamente, en lugar de depender de un equipo centralizado para detectar los errores?' },
 
   // A5 — Gestión del Cambio y Mejora Continua
   { id: 'a_5_1', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 1,

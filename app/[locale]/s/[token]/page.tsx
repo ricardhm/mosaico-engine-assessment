@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useSession } from '@/components/assessment/SessionContext'
 import { AssessmentHeader } from '@/components/assessment/AssessmentHeader'
 import { Button } from '@/components/ui/Button'
+import { Select } from '@/components/ui/Select'
 
 export default function WelcomePage() {
   const t = useTranslations('assessment.welcome')
@@ -15,6 +16,7 @@ export default function WelcomePage() {
   const locale = params.locale as string
   const token = params.token as string
   const [loading, setLoading] = useState(false)
+  const [seniority, setSeniority] = useState('')
 
   async function handleStart() {
     setLoading(true)
@@ -26,7 +28,11 @@ export default function WelcomePage() {
       return
     }
 
-    await fetch(`/api/session/${token}/start`, { method: 'POST' })
+    await fetch(`/api/session/${token}/start`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ respondent_seniority: seniority || null }),
+    })
     router.push(`/${locale}/s/${token}/engine/1`)
   }
 
@@ -83,11 +89,31 @@ export default function WelcomePage() {
 
         <p className="text-sm text-slate-500 mb-6">{t('instructions')}</p>
 
-        <Button size="lg" loading={loading} onClick={handleStart}>
-          {isResume
-            ? (locale === 'es' ? 'Continuar evaluación' : 'Resume assessment')
-            : t('startButton')}
-        </Button>
+        {!isResume && (
+          <div className="mb-6">
+            <Select
+              id="seniority"
+              label={t('seniority')}
+              value={seniority}
+              onChange={(e) => setSeniority(e.target.value)}
+              options={[
+                { value: 'leadership', label: t('seniorityOptions.leadership') },
+                { value: 'senior_management', label: t('seniorityOptions.senior_management') },
+                { value: 'middle_management', label: t('seniorityOptions.middle_management') },
+              ]}
+              placeholder={t('seniorityPlaceholder')}
+            />
+          </div>
+        )}
+
+        <div className="flex items-center gap-4">
+          <Button size="lg" loading={loading} onClick={handleStart}>
+            {isResume
+              ? (locale === 'es' ? 'Continuar evaluación' : 'Resume assessment')
+              : t('startButton')}
+          </Button>
+          <p className="text-xs text-slate-400">{t('anonymityNote')}</p>
+        </div>
       </main>
     </div>
   )

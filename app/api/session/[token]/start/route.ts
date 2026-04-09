@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase/server'
 
 export async function POST(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ token: string }> }
 ) {
   const { token } = await params
@@ -22,9 +22,17 @@ export async function POST(
     return NextResponse.json({ status: 'completed' })
   }
 
+  let respondent_seniority: string | null = null
+  try {
+    const body = await request.json()
+    respondent_seniority = body.respondent_seniority ?? null
+  } catch {
+    // body is optional — ignore parse errors
+  }
+
   await supabase
     .from('sessions')
-    .update({ status: 'in_progress' })
+    .update({ status: 'in_progress', ...(respondent_seniority && { respondent_seniority }) })
     .eq('id', session.id)
 
   return NextResponse.json({ status: 'in_progress' })
