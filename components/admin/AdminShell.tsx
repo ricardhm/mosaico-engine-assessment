@@ -11,6 +11,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
   const { user, loading, signOut } = useAuth()
   const router = useRouter()
   const params = useParams()
+  const pathname = usePathname()
   const locale = params.locale as string
   const t = useTranslations('admin')
 
@@ -32,8 +33,6 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
     await signOut()
     router.push(`/${locale}/admin/login`)
   }
-
-  const pathname = usePathname()
 
   return (
     <div className="min-h-screen bg-slate-50">
