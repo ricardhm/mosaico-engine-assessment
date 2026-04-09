@@ -41,8 +41,9 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <Link href={`/${locale}/admin`} className="text-lg font-bold text-brand-700 tracking-tight">
+            <Link href={`/${locale}/admin`} className="text-lg font-bold text-brand-700 tracking-tight flex items-center gap-2">
               Mosaico
+              <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-brand-100 text-brand-600 tracking-wide">beta</span>
             </Link>
             <nav className="flex items-center gap-1">
               <NavLink href={`/${locale}/admin`} label={locale === 'es' ? 'Sesiones' : 'Sessions'} active={!pathname.includes('/analytics')} />

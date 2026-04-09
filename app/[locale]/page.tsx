@@ -1,9 +1,8 @@
 import { redirect } from 'next/navigation'
-import { routing } from '@/i18n/routing'
 
-type Locale = (typeof routing.locales)[number]
+type Props = { params: Promise<{ locale: string }> }
 
-// Redirect /es or /en to the admin dashboard
-export default function LocaleRootPage({ params }: { params: { locale: Locale } }) {
-  redirect(`/${params.locale}/admin`)
+export default async function LocaleRootPage({ params }: Props) {
+  const { locale } = await params
+  redirect(`/${locale}/admin`)
 }
