@@ -1,6 +1,6 @@
 'use client'
 import { useEffect } from 'react'
-import { useRouter, useParams } from 'next/navigation'
+import { useRouter, useParams, usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { useAuth } from './AuthProvider'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
@@ -33,14 +33,22 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
     router.push(`/${locale}/admin/login`)
   }
 
+  const pathname = usePathname()
+
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Top nav */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-          <Link href={`/${locale}/admin`} className="text-lg font-bold text-brand-700 tracking-tight">
-            Mosaico
-          </Link>
+          <div className="flex items-center gap-6">
+            <Link href={`/${locale}/admin`} className="text-lg font-bold text-brand-700 tracking-tight">
+              Mosaico
+            </Link>
+            <nav className="flex items-center gap-1">
+              <NavLink href={`/${locale}/admin`} label={locale === 'es' ? 'Sesiones' : 'Sessions'} active={!pathname.includes('/analytics')} />
+              <NavLink href={`/${locale}/admin/analytics`} label={locale === 'es' ? 'Analítica' : 'Analytics'} active={pathname.includes('/analytics')} />
+            </nav>
+          </div>
           <div className="flex items-center gap-3">
             <span className="text-xs text-slate-400 hidden sm:block">{user.email}</span>
             <LocaleSwitcher />
@@ -55,5 +63,20 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
     </div>
+  )
+}
+
+function NavLink({ href, label, active }: { href: string; label: string; active?: boolean }) {
+  return (
+    <Link
+      href={href}
+      className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+        active
+          ? 'bg-slate-100 text-slate-900'
+          : 'text-slate-500 hover:text-slate-700 hover:bg-slate-50'
+      }`}
+    >
+      {label}
+    </Link>
   )
 }
