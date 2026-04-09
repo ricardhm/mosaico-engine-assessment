@@ -21,7 +21,7 @@
     },
     "efficiency": {
       "name": "Efficiency Engine",
-      "tagline": "Better margins by reducing COGS",
+      "tagline": "Scale smarter with data, AI, and process excellence",
       "short": "Efficiency"
     },
     "adaptability": {
@@ -36,11 +36,11 @@
     "g3": "Lifecycle & Retention Marketing",
     "g4": "Paid & Owned Channel Optimization",
     "g5": "Revenue Analytics & Forecasting",
-    "e1": "Inventory & Demand Planning",
-    "e2": "Supplier & Procurement Management",
-    "e3": "Fulfillment & Logistics Efficiency",
-    "e4": "Product Margin & Assortment Discipline",
-    "e5": "Operational Data & Cost Visibility",
+    "e1": "Data Governance & Single Source of Truth",
+    "e2": "Data Trust & Quality",
+    "e3": "AI & Automation Readiness",
+    "e4": "Process Efficiency & Profitability",
+    "e5": "Operational Scalability",
     "a1": "Technology Stack & Integration",
     "a2": "Process Documentation & Standardization",
     "a3": "Organizational Alignment & Decision Velocity",

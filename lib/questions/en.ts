@@ -40,7 +40,7 @@ const questions: Question[] = [
   { id: 'g_4_3', pillarId: 'g4', engine: 'growth', pillarIndex: 4, questionIndex: 3,
     text: 'How systematically do you optimize email and SMS send cadence, deliverability, and content based on engagement and revenue metrics?' },
   { id: 'g_4_4', pillarId: 'g4', engine: 'growth', pillarIndex: 4, questionIndex: 4,
-    text: 'To what extent do you manage organic channels (SEO, content, social) with a structured editorial calendar and measurable conversion goals?' },
+    text: 'To what extent do you manage your presence and performance on marketplace channels (Amazon, MercadoLibre, etc.) with structured analytics, pricing strategies, and listing optimization?' },
 
   // G5 — Revenue Analytics & Forecasting
   { id: 'g_5_1', pillarId: 'g5', engine: 'growth', pillarIndex: 5, questionIndex: 1,
@@ -50,58 +50,58 @@ const questions: Question[] = [
   { id: 'g_5_3', pillarId: 'g5', engine: 'growth', pillarIndex: 5, questionIndex: 3,
     text: 'Do you track and act on leading indicators of revenue (cart abandonment, browse-to-buy conversion, repeat purchase rate) beyond lagging sales figures?' },
   { id: 'g_5_4', pillarId: 'g5', engine: 'growth', pillarIndex: 5, questionIndex: 4,
-    text: 'How mature is your experimentation culture — do you regularly run controlled tests on pricing, promotions, and site/app changes with statistical rigor?' },
+    text: 'How mature is your pricing intelligence — do you actively model price elasticity, monitor competitive pricing, and use data to make systematic pricing decisions across your product catalog?' },
 
   // ── EFFICIENCY ENGINE ────────────────────────────────────────────────
-  // E1 — Inventory & Demand Planning
+  // E1 — Data Governance & Single Source of Truth
   { id: 'e_1_1', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 1,
-    text: 'How accurately does your demand planning process forecast SKU-level demand across locations and channels, factoring in seasonality, promotions, and trends?' },
+    text: 'How well does your organization maintain a single, agreed-upon source of truth for key business metrics — do all teams (finance, marketing, operations) work from the same data, or do siloed spreadsheets create contradictions?' },
   { id: 'e_1_2', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 2,
-    text: 'Do you have automated replenishment logic (reorder points, safety stock formulas) or do buyers manually decide when and how much to reorder?' },
+    text: 'Do you have documented data ownership — is it clear who is responsible for the accuracy and governance of each critical data domain in your business?' },
   { id: 'e_1_3', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 3,
-    text: 'How well do you measure and actively reduce inventory carrying costs, dead stock, and markdown rates across your assortment?' },
+    text: 'To what extent can your commercial and operational teams access and query business data self-serve, without relying on IT or a data engineering team to pull reports?' },
   { id: 'e_1_4', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 4,
-    text: 'To what extent is your inventory planning connected to your supplier lead times and purchase order process in a single workflow?' },
+    text: 'How mature is your data architecture — do you have a structured, scalable data infrastructure (data warehouse, data lake, or equivalent) that can support your growing analytical needs?' },
 
-  // E2 — Supplier & Procurement Management
+  // E2 — Data Trust & Quality
   { id: 'e_2_1', pillarId: 'e2', engine: 'efficiency', pillarIndex: 2, questionIndex: 1,
-    text: 'Do you have documented performance scorecards for key suppliers covering on-time delivery, fill rate, quality defect rate, and pricing compliance?' },
+    text: 'How confident are your teams in the accuracy of the data they use daily — do decisions get delayed or second-guessed because of doubts about data reliability?' },
   { id: 'e_2_2', pillarId: 'e2', engine: 'efficiency', pillarIndex: 2, questionIndex: 2,
-    text: 'How systematically do you negotiate and review supplier contracts — do you benchmark pricing against market rates on a scheduled basis?' },
+    text: 'Do you have automated monitoring in place to detect data errors, pipeline failures, or anomalies before they reach reports and cause operational or financial mistakes?' },
   { id: 'e_2_3', pillarId: 'e2', engine: 'efficiency', pillarIndex: 2, questionIndex: 3,
-    text: 'To what extent have you diversified your supplier base to reduce single-source dependency for high-volume or high-margin products?' },
+    text: 'How systematically do you measure and track data quality metrics (completeness, accuracy, timeliness, consistency) across your critical data sources?' },
   { id: 'e_2_4', pillarId: 'e2', engine: 'efficiency', pillarIndex: 2, questionIndex: 4,
-    text: 'How well integrated are your purchase orders, receiving, and invoice reconciliation processes — and how much manual effort do they require?' },
+    text: 'When data quality issues are discovered, how quickly and reliably does your organization identify the root cause and prevent the same error from recurring?' },
 
-  // E3 — Fulfillment & Logistics Efficiency
+  // E3 — AI & Automation Readiness
   { id: 'e_3_1', pillarId: 'e3', engine: 'efficiency', pillarIndex: 3, questionIndex: 1,
-    text: 'Do you have visibility into your fully loaded cost-to-fulfill per order (pick, pack, ship, last-mile) broken down by channel and carrier?' },
+    text: 'To what extent has your organization adopted AI tools — generative AI, predictive models, or intelligent agents — in day-to-day commercial or operational workflows?' },
   { id: 'e_3_2', pillarId: 'e3', engine: 'efficiency', pillarIndex: 3, questionIndex: 2,
-    text: 'How systematically do you optimize carrier selection, zone skipping, and packaging to reduce per-unit shipping costs?' },
+    text: 'How securely and systematically do your teams apply AI to internal company data — do you have clear policies governing AI usage, data access controls, and output validation?' },
   { id: 'e_3_3', pillarId: 'e3', engine: 'efficiency', pillarIndex: 3, questionIndex: 3,
-    text: 'How mature is your returns management process — do you measure return rates by SKU and root cause, and systematically reduce preventable returns?' },
+    text: 'How many of your high-volume, repetitive processes (reporting, data entry, approvals, customer communications) have been automated or formally identified as automation candidates?' },
   { id: 'e_3_4', pillarId: 'e3', engine: 'efficiency', pillarIndex: 3, questionIndex: 4,
-    text: 'If you operate warehouses or physical locations, how efficiently are they laid out and staffed relative to throughput benchmarks?' },
+    text: 'How capable is your organization of evaluating, piloting, and scaling new AI or automation tools — do you have the technical readiness and change management capability to move quickly?' },
 
-  // E4 — Product Margin & Assortment Discipline
+  // E4 — Process Efficiency & Profitability
   { id: 'e_4_1', pillarId: 'e4', engine: 'efficiency', pillarIndex: 4, questionIndex: 1,
-    text: 'Do you have real-time or near-real-time visibility into gross margin by SKU, category, and channel — inclusive of all variable costs?' },
+    text: 'How systematically do you identify, quantify, and eliminate operational waste — are bottlenecks in your key processes measured and actively being reduced?' },
   { id: 'e_4_2', pillarId: 'e4', engine: 'efficiency', pillarIndex: 4, questionIndex: 2,
-    text: 'How systematically do you rationalize your assortment — removing low-margin, low-velocity SKUs to reduce complexity costs?' },
+    text: 'Do you have documented, measurable efficiency targets (cycle times, error rates, cost per transaction) for your core commercial and operational processes?' },
   { id: 'e_4_3', pillarId: 'e4', engine: 'efficiency', pillarIndex: 4, questionIndex: 3,
-    text: 'Do you have a disciplined promotional strategy that models margin impact before approving discounts, or are promotions driven primarily by gut feel or competitive pressure?' },
+    text: 'How well do your operational efficiency improvements translate into measurable profitability gains — do you track the financial impact of process changes?' },
   { id: 'e_4_4', pillarId: 'e4', engine: 'efficiency', pillarIndex: 4, questionIndex: 4,
-    text: 'How well do you manage cost price increases from suppliers — do you have a formal process for evaluating impact and deciding whether to absorb, pass through, or renegotiate?' },
+    text: 'How structured is your approach to prioritizing which processes to improve — do you use data and ROI modeling to select improvement projects, or are decisions driven by urgency and intuition?' },
 
-  // E5 — Operational Data & Cost Visibility
+  // E5 — Operational Scalability
   { id: 'e_5_1', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 1,
-    text: 'How accurately do you allocate indirect costs (warehouse overhead, customer service, tech platforms) to products or channels to understand true profitability?' },
+    text: 'How well does your operational capacity scale with demand — can you handle significant volume increases (seasonal spikes, growth phases) without proportional increases in headcount or cost?' },
   { id: 'e_5_2', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 2,
-    text: 'Do you have a single source of truth for operational KPIs (fill rate, OTIF, shrinkage) that all relevant teams reference?' },
+    text: 'To what extent are your core operational processes standardized and executable by a new team member without relying on tribal knowledge concentrated in a few key individuals?' },
   { id: 'e_5_3', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 3,
-    text: 'How well do your finance, merchandising, and operations teams share data and align on the same margin and cost definitions?' },
+    text: 'How resilient is your operation to disruptions — do you have documented backup processes, redundant systems, and clear escalation paths when critical workflows fail?' },
   { id: 'e_5_4', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 4,
-    text: 'How frequently and reliably do you produce management accounts, and are operational leaders reviewing margin data on a weekly cadence?' },
+    text: 'How deliberately does your organization plan for operational capacity — do you have a forward-looking roadmap for scaling your infrastructure, systems, and people ahead of demand?' },
 
   // ── ADAPTABILITY ENGINE ──────────────────────────────────────────────
   // A1 — Technology Stack & Integration

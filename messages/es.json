@@ -21,7 +21,7 @@
     },
     "efficiency": {
       "name": "Motor de Eficiencia",
-      "tagline": "Mejora tus márgenes reduciendo el costo de ventas",
+      "tagline": "Escala con inteligencia: datos, IA y excelencia operacional",
       "short": "Eficiencia"
     },
     "adaptability": {
@@ -36,11 +36,11 @@
     "g3": "Marketing de Ciclo de Vida y Retención",
     "g4": "Optimización de Canales Pagados y Propios",
     "g5": "Analítica de Ingresos y Pronóstico",
-    "e1": "Planificación de Inventario y Demanda",
-    "e2": "Gestión de Proveedores y Compras",
-    "e3": "Eficiencia de Fulfillment y Logística",
-    "e4": "Márgenes de Producto y Disciplina de Surtido",
-    "e5": "Datos Operacionales y Visibilidad de Costos",
+    "e1": "Gobernanza de Datos y Fuente Única de Verdad",
+    "e2": "Confianza y Calidad de Datos",
+    "e3": "Adopción de IA y Automatización",
+    "e4": "Eficiencia de Procesos y Rentabilidad",
+    "e5": "Escalabilidad Operacional",
     "a1": "Stack Tecnológico e Integración",
     "a2": "Documentación y Estandarización de Procesos",
     "a3": "Alineación Organizacional y Velocidad de Decisión",
