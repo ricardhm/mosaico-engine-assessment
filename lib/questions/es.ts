@@ -59,7 +59,7 @@ const questions: Question[] = [
   { id: 'e_1_2', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 2,
     text: '¿Tienes documentados los responsables de datos — está claro quién es accountable de la exactitud y gobernanza de cada dominio de datos crítico en tu negocio?' },
   { id: 'e_1_3', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 3,
-    text: '¿En qué medida pueden tus equipos comerciales y operacionales acceder a métricas y reportes del negocio — ventas, inventario, márgenes y KPIs operacionales — de forma autónoma, sin depender de TI o de un equipo de ingeniería de datos para extraer reportes?' },
+    text: '¿En qué medida pueden tus equipos de finanzas, operaciones y comercial consultar datos de desempeño del negocio por su cuenta — sin tener que esperar a que TI o el equipo de datos les extraiga y prepare los reportes?' },
   { id: 'e_1_4', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 4,
     text: '¿Qué tan madura es tu arquitectura de datos — cuentas con una infraestructura estructurada y escalable (data warehouse, data lake o equivalente) que soporte el crecimiento de tus necesidades analíticas?' },
 
@@ -97,18 +97,18 @@ const questions: Question[] = [
   { id: 'e_5_1', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 1,
     text: '¿Qué tan bien escala tu capacidad operacional con la demanda — puedes manejar incrementos de volumen significativos (picos estacionales, fases de crecimiento) sin aumentos proporcionales en personal o costo?' },
   { id: 'e_5_2', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 2,
-    text: '¿En qué medida están estandarizados tus procesos operacionales clave y pueden ser ejecutados por un nuevo integrante sin depender del conocimiento concentrado en pocas personas clave?' },
+    text: '¿En qué medida están estandarizados y documentados tus procesos operacionales clave, de forma que un nuevo integrante pueda ejecutarlos sin depender de personas específicas que concentran todo el saber hacer en su cabeza?' },
   { id: 'e_5_3', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 3,
     text: '¿Qué tan resiliente es tu operación ante disrupciones — tienes procesos de respaldo documentados, sistemas redundantes y rutas de escalamiento claras cuando los flujos críticos fallan?' },
   { id: 'e_5_4', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 4,
-    text: '¿Con qué anticipación planifica tu organización la capacidad operativa — tienes un plan para escalar infraestructura, sistemas y personas antes de que la demanda lo exija?' },
+    text: '¿Qué tan proactivamente planifica tu organización el crecimiento operacional — tienes un plan anticipado para ampliar infraestructura, sistemas y personal antes de que la demanda te obligue a reaccionar, o mayormente respondes cuando ya se nota la falta de capacidad?' },
 
   // ── MOTOR DE ADAPTABILIDAD ───────────────────────────────────────────
   // A1 — Stack Tecnológico e Integración
   { id: 'a_1_1', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 1,
-    text: '¿Qué tan integrados están tus sistemas de comercio principales — plataforma de e-commerce, OMS (sistema de gestión de pedidos), ERP (sistema de planificación empresarial), WMS (sistema de gestión de almacén) y CRM (sistema de gestión de clientes) — ¿comparten datos en tiempo casi real o se reconcilian manualmente?' },
+    text: '¿Qué tan conectados están tus sistemas principales de negocio — la plataforma de comercio electrónico, el sistema de gestión de pedidos (OMS), el sistema de planificación de recursos (ERP), el sistema de gestión de almacén (WMS) y el CRM — ¿comparten datos automáticamente en tiempo casi real o tu equipo los concilia de forma manual?' },
   { id: 'a_1_2', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 2,
-    text: '¿Cuánto te limitan tus sistemas actuales para lanzar nuevas funcionalidades o hacer cambios? ¿Cada modificación requiere un esfuerzo técnico, tiempo o costo significativo?' },
+    text: '¿En qué medida los sistemas tecnológicos desactualizados o rígidos frenan tu capacidad de lanzar nuevas funcionalidades, ejecutar campañas o hacer cambios en la experiencia digital — y qué tan dependiente eres de apoyo técnico externo para que eso suceda?' },
   { id: 'a_1_3', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 3,
     text: '¿Está documentada la arquitectura de tus sistemas de forma que alguien fuera del equipo técnico pueda entender cómo están conectados los sistemas principales y cómo fluyen los datos entre ellos?' },
   { id: 'a_1_4', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 4,
@@ -152,7 +152,7 @@ const questions: Question[] = [
   { id: 'a_5_3', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 3,
     text: '¿Qué tan seguros se sienten los empleados para plantear problemas operacionales o proponer cambios — y con qué rapidez se evalúan las buenas ideas y se decide probarlas o descartarlas?' },
   { id: 'a_5_4', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 4,
-    text: '¿Qué tan bien logra tu organización adoptar nuevas formas de trabajar e innovar sin descuidar la ejecución operativa del día a día?' },
+    text: '¿Qué tan bien logra tu organización mantener las operaciones del día a día funcionando bien mientras también implementa y adopta nuevas herramientas, procesos o capacidades — sin que una cosa vaya en detrimento de la otra?' },
 ]
 
 export default questions

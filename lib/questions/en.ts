@@ -59,7 +59,7 @@ const questions: Question[] = [
   { id: 'e_1_2', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 2,
     text: 'Do you have documented data ownership — is it clear who is responsible for the accuracy and governance of each critical data domain in your business?' },
   { id: 'e_1_3', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 3,
-    text: 'To what extent can your commercial and operational teams access business metrics and reports — sales performance, inventory, margins, and fulfillment KPIs — self-serve, without relying on IT or a data engineering team?' },
+    text: 'To what extent can your finance, operations, and commercial teams access business performance data on their own — without waiting for IT or a data team to extract and prepare reports for them?' },
   { id: 'e_1_4', pillarId: 'e1', engine: 'efficiency', pillarIndex: 1, questionIndex: 4,
     text: 'How mature is your data architecture — do you have a structured, scalable data infrastructure (data warehouse, data lake, or equivalent) that can support your growing analytical needs?' },
 
@@ -97,18 +97,18 @@ const questions: Question[] = [
   { id: 'e_5_1', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 1,
     text: 'How well does your operational capacity scale with demand — can you handle significant volume increases (seasonal spikes, growth phases) without proportional increases in headcount or cost?' },
   { id: 'e_5_2', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 2,
-    text: 'To what extent are your core operational processes standardized and executable by a new team member without depending on knowledge held by only a few people?' },
+    text: 'To what extent are your core operational processes standardized and documented well enough that a new team member could carry them out without depending on specific people who hold all the know-how in their heads?' },
   { id: 'e_5_3', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 3,
     text: 'How resilient is your operation to disruptions — do you have documented backup processes, redundant systems, and clear escalation paths when critical workflows fail?' },
   { id: 'e_5_4', pillarId: 'e5', engine: 'efficiency', pillarIndex: 5, questionIndex: 4,
-    text: 'How deliberately does your organization plan for operational capacity — do you have a forward-looking roadmap for scaling your infrastructure, systems, and people ahead of demand?' },
+    text: 'How proactively does your organization plan for operational growth — do you have a forward-looking plan for expanding infrastructure, systems, and headcount before demand forces your hand, or do you mostly react when capacity runs short?' },
 
   // ── ADAPTABILITY ENGINE ──────────────────────────────────────────────
   // A1 — Technology Stack & Integration
   { id: 'a_1_1', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 1,
-    text: 'How well integrated are your core commerce systems — e-commerce platform, OMS (Order Management System), ERP (Enterprise Resource Planning), WMS (Warehouse Management System), and CRM (Customer Relationship Management) — do they share data in near real time or are they manually reconciled?' },
+    text: 'How well connected are your core business systems — your e-commerce platform, order management system (OMS), enterprise resource planning (ERP), warehouse management (WMS), and CRM — do they share data automatically in near real time, or do your teams reconcile them manually?' },
   { id: 'a_1_2', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 2,
-    text: 'How much do your current systems limit your ability to launch new features or make changes? Does every modification require significant technical effort, time, or cost?' },
+    text: 'How much do outdated or rigid technology systems slow your ability to launch new features, run campaigns, or make changes to your digital experience — and how dependent are you on outside technical help to make those changes happen?' },
   { id: 'a_1_3', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 3,
     text: 'Is your systems architecture documented clearly enough that someone outside the technical team could understand how your core systems are connected and how data flows between them?' },
   { id: 'a_1_4', pillarId: 'a1', engine: 'adaptability', pillarIndex: 1, questionIndex: 4,
@@ -152,7 +152,7 @@ const questions: Question[] = [
   { id: 'a_5_3', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 3,
     text: 'How psychologically safe do employees feel raising operational problems or proposing changes — and how quickly are good ideas evaluated and either tested or rejected?' },
   { id: 'a_5_4', pillarId: 'a5', engine: 'adaptability', pillarIndex: 5, questionIndex: 4,
-    text: 'How well does your organization balance executing current operations reliably while simultaneously testing and adopting new capabilities?' },
+    text: 'How well does your organization keep day-to-day operations running smoothly while also piloting and rolling out new tools, processes, or capabilities — without one coming at the expense of the other?' },
 ]
 
 export default questions

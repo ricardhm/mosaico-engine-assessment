@@ -52,8 +52,8 @@ export default async function ResultsPage({
   const recommendations = getRecommendations(locale, scores.pillar_scores, scores.tiers)
   const flags = getCrossEngineFlags(scores.engine_scores)
 
-  const gaps = recommendations.filter((r) => r.priority !== 'strength').slice(0, 8)
-  // Always surface top 3 strengths so the report never feels like only bad news
+  // Show up to 8 priority areas (critical + opportunity), then top 3 strengths
+  const priorityRecs = recommendations.filter((r) => r.priority !== 'strength').slice(0, 8)
   const strengths = recommendations.filter((r) => r.priority === 'strength').slice(0, 3)
 
   const TIER_COLORS: Record<string, string> = {
@@ -120,7 +120,7 @@ export default async function ResultsPage({
 
         {/* Maturity tier legend */}
         <div className="bg-white rounded-2xl border border-slate-200 p-5 mb-6">
-          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">{t('tierLegend')}</p>
+          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">{t('maturityScale')}</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {(['Foundational', 'Developing', 'Scaling', 'Leading'] as const).map((tier) => (
               <div key={tier}>
@@ -144,11 +144,24 @@ export default async function ResultsPage({
           </div>
         )}
 
+        {/* Maturity tier legend */}
+        <div className="bg-white rounded-2xl border border-slate-200 p-5 mb-6">
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">{t('maturityScale')}</p>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            {(['Foundational', 'Developing', 'Scaling', 'Leading'] as const).map((tier) => (
+              <div key={tier} className="flex flex-col gap-1">
+                <Badge variant="tier" className="w-fit">{tTiers(`${tier}.label`)}</Badge>
+                <p className="text-xs text-slate-500 leading-snug">{tTiers(`${tier}.description`)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Recommendations */}
         <h2 className="text-base font-semibold text-slate-800 mb-1">{t('recommendations')}</h2>
-        <p className="text-xs text-slate-400 mb-3">{t('recommendationsNote')}</p>
-        <div className="flex flex-col gap-3 mb-8">
-          {gaps.map((rec) => (
+        <p className="text-xs text-slate-500 mb-3">{t('recommendationsNote')}</p>
+        <div className="flex flex-col gap-3 mb-6">
+          {priorityRecs.map((rec) => (
             <div key={rec.pillarId} className="bg-white rounded-xl border border-slate-200 p-4">
               <div className="flex items-center gap-2 mb-2">
                 <Badge variant={rec.priority}>
@@ -163,11 +176,11 @@ export default async function ResultsPage({
           ))}
         </div>
 
-        {/* Strengths — always show even if everything scores low */}
+        {/* Strengths — always show at least top 3 */}
         {strengths.length > 0 && (
           <>
-            <h2 className="text-base font-semibold text-slate-800 mb-1">{t('strengthsTitle')}</h2>
-            <p className="text-xs text-slate-400 mb-3">{t('strengthsNote')}</p>
+            <h2 className="text-base font-semibold text-slate-800 mt-8 mb-1">{t('strengthsTitle')}</h2>
+            <p className="text-xs text-slate-500 mb-3">{t('strengthsNote')}</p>
             <div className="flex flex-col gap-3">
               {strengths.map((rec) => (
                 <div key={rec.pillarId} className="bg-white rounded-xl border border-slate-200 p-4">
